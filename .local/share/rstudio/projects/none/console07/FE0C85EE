@@ -1,288 +1,0 @@
-]0;~[?2004hrstudio@05c8dc6d2b78:~$ [Krstudio@05c8dc6d2b78:~$ Ubuntu
-[?2004lbash: Ubuntu: command not found
-]0;~[?2004hrstudio@05c8dc6d2b78:~$ make init
-[?2004lmkdir -p derived_data
-mkdir -p figures
-]0;~[?2004hrstudio@05c8dc6d2b78:~$ make derived_data[Krstudio@05c8dc6d2b78:~$ make derived_data/nyc.csv
-[?2004lRscript tidy_data.r
-Error in library(viridis) : there is no package called ‘viridis’
-Execution halted
-make: *** [Makefile:15: derived_data/nyc.csv] Error 1
-]0;~[?2004hrstudio@05c8dc6d2b78:~$ ls
-[?2004l611project    Dockerfile       euroasia_pcaplt.r  figures     Makefile	 region_plt.r  source_data
-derived_data  euroasia_data.r  euroasia_rocplt.r  freq_plt.r  README.md  report.Rmd    tidy_data.r
-]0;~[?2004hrstudio@05c8dc6d2b78:~$ Rscript tidy_data.R
-[?2004lError in library(viridis) : there is no package called ‘viridis’
-Execution halted
-]0;~[?2004hrstudio@05c8dc6d2b78:~$ [?2004l[?2004h[?2004l
-]0;~[?2004hrstudio@5ec608d1df34:~$ make init
-[?2004lmkdir -p derived_data
-mkdir -p figures
-]0;~[?2004hrstudio@5ec608d1df34:~$ Rscrirp[K[K[Kipt tidy_data.r
-[?2004lError in library(viridis) : there is no package called ‘viridis’
-Execution halted
-]0;~[?2004hrstudio@5ec608d1df34:~$ [?2004l[?2004h[?2004l
-]0;~[?2004hrstudio@a308b34c8c8e:~$ Rscript tidy_data.r
-[?2004lError in library(viridis) : there is no package called ‘viridis’
-Execution halted
-]0;~[?2004hrstudio@a308b34c8c8e:~$ ^C[?2004l[?2004h[?2004l
-]0;~[?2004hrstudio@a308b34c8c8e:~$ ^C[?2004l[?2004h[?2004l
-]0;~[?2004hrstudio@a308b34c8c8e:~$ ^C[?2004l[?2004h[?2004l
-]0;~[?2004hrstudio@241113aca7f7:~$ make init
-[?2004lmkdir -p derived_data
-mkdir -p figures
-]0;~[?2004hrstudio@241113aca7f7:~$ make derived_data/nyc.csv
-[?2004lRscript tidy_data.r
-Loading required package: viridisLite
-[?25h── [1mAttaching core tidyverse packages[22m ────────────────────────────────────────────────────── tidyverse 2.0.0 ──
-[32m✔[39m [34mdplyr    [39m 1.1.4     [32m✔[39m [34mreadr    [39m 2.1.5
-[32m✔[39m [34mforcats  [39m 1.0.0     [32m✔[39m [34mstringr  [39m 1.5.1
-[32m✔[39m [34mggplot2  [39m 3.5.1     [32m✔[39m [34mtibble   [39m 3.2.1
-[32m✔[39m [34mlubridate[39m 1.9.3     [32m✔[39m [34mtidyr    [39m 1.3.1
-[32m✔[39m [34mpurrr    [39m 1.0.2     
-── [1mConflicts[22m ──────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-[31m✖[39m [34mdplyr[39m::[32mfilter()[39m masks [34mstats[39m::filter()
-[31m✖[39m [34mdplyr[39m::[32mlag()[39m    masks [34mstats[39m::lag()
-[36mℹ[39m Use the conflicted package ([3m[34m<http://conflicted.r-lib.org/>[39m[23m) to force all conflicts to become errors
-[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h]0;~[?2004hrstudio@241113aca7f7:~$ make_figures/freq.png
-[?2004lbash: make_figures/freq.png: No such file or directory
-]0;~[?2004hrstudio@241113aca7f7:~$ make_figures/freq.png[1Pfigures/freq.png figures/freq.png[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[?2004lRscript freq_plt.r
-── [1mAttaching core tidyverse packages[22m ────────────────────────────────────────────────────── tidyverse 2.0.0 ──
-[32m✔[39m [34mdplyr    [39m 1.1.4     [32m✔[39m [34mreadr    [39m 2.1.5
-[32m✔[39m [34mforcats  [39m 1.0.0     [32m✔[39m [34mstringr  [39m 1.5.1
-[32m✔[39m [34mggplot2  [39m 3.5.1     [32m✔[39m [34mtibble   [39m 3.2.1
-[32m✔[39m [34mlubridate[39m 1.9.3     [32m✔[39m [34mtidyr    [39m 1.3.1
-[32m✔[39m [34mpurrr    [39m 1.0.2     
-── [1mConflicts[22m ──────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-[31m✖[39m [34mdplyr[39m::[32mfilter()[39m masks [34mstats[39m::filter()
-[31m✖[39m [34mdplyr[39m::[32mlag()[39m    masks [34mstats[39m::lag()
-[36mℹ[39m Use the conflicted package ([3m[34m<http://conflicted.r-lib.org/>[39m[23m) to force all conflicts to become errors
-[?25h[?25h[?25h[?25h[?25h[?25h[?25h]0;~[?2004hrstudio@241113aca7f7:~$ [?2004l[?2004h[?2004l
-]0;~[?2004hrstudio@fcf568b70d58:~$ make init
-[?2004lmkdir -p derived_data
-mkdir -p figures
-]0;~[?2004hrstudio@fcf568b70d58:~$ make figures/regionggplot.png
-[?2004lRscript tidy_data.r
-Loading required package: viridisLite
-[?25h── [1mAttaching core tidyverse packages[22m ────────────────────────────────────────────────────── tidyverse 2.0.0 ──
-[32m✔[39m [34mdplyr    [39m 1.1.4     [32m✔[39m [34mreadr    [39m 2.1.5
-[32m✔[39m [34mforcats  [39m 1.0.0     [32m✔[39m [34mstringr  [39m 1.5.1
-[32m✔[39m [34mggplot2  [39m 3.5.1     [32m✔[39m [34mtibble   [39m 3.2.1
-[32m✔[39m [34mlubridate[39m 1.9.3     [32m✔[39m [34mtidyr    [39m 1.3.1
-[32m✔[39m [34mpurrr    [39m 1.0.2     
-── [1mConflicts[22m ──────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-[31m✖[39m [34mdplyr[39m::[32mfilter()[39m masks [34mstats[39m::filter()
-[31m✖[39m [34mdplyr[39m::[32mlag()[39m    masks [34mstats[39m::lag()
-[36mℹ[39m Use the conflicted package ([3m[34m<http://conflicted.r-lib.org/>[39m[23m) to force all conflicts to become errors
-[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25hmake: *** No rule to make target 'regiongglot.r', needed by 'figures/regionggplot.png'.  Stop.
-]0;~[?2004hrstudio@fcf568b70d58:~$ maek[K[Kke init
-[?2004lmkdir -p derived_data
-mkdir -p figures
-]0;~[?2004hrstudio@fcf568b70d58:~$ docker build[K[K[K[K[K[K[K[K[K[K[K[Kmake figures/regionggplot.png
-[?2004lmake: *** No rule to make target 'regiongglot.r', needed by 'figures/regionggplot.png'.  Stop.
-]0;~[?2004hrstudio@fcf568b70d58:~$ [?2004l[?2004h[?2004l
-]0;~[?2004hrstudio@3a311d01d8fc:~$ make init
-[?2004lmkdir -p derived_data
-mkdir -p figures
-]0;~[?2004hrstudio@3a311d01d8fc:~$ reggion[K[K[K[K[K[K[Kmake initfigures/regionggplot.png
-[?2004lRscript regionggplot.r
-Error in library(ggplot) : there is no package called ‘ggplot’
-Execution halted
-make: *** [Makefile:18: figures/regionggplot.png] Error 1
-]0;~[?2004hrstudio@3a311d01d8fc:~$ make figures/regionggplot.pnginit[Kfigures/regionggplot.png
-[?2004lRscript regionggplot.r
-[?25h[?25h[?25hError in saveWidget(region.plt, "figures/region.png") : 
-  could not find function "saveWidget"
-Execution halted
-[?25hmake: *** [Makefile:18: figures/regionggplot.png] Error 1
-]0;~[?2004hrstudio@3a311d01d8fc:~$ make figures/regionggplot.png
-[?2004lRscript regionggplot.r
-[?25h[?25h[?25h[?25h[?25h]0;~[?2004hrstudio@3a311d01d8fc:~$ make derived_data/eyur[K[K[Kuroasia.csv
-[?2004lRscript euroasia_data.r
-── [1mAttaching core tidyverse packages[22m ────────────────────────────────────────────────────── tidyverse 2.0.0 ──
-[32m✔[39m [34mdplyr    [39m 1.1.4     [32m✔[39m [34mreadr    [39m 2.1.5
-[32m✔[39m [34mforcats  [39m 1.0.0     [32m✔[39m [34mstringr  [39m 1.5.1
-[32m✔[39m [34mggplot2  [39m 3.5.1     [32m✔[39m [34mtibble   [39m 3.2.1
-[32m✔[39m [34mlubridate[39m 1.9.3     [32m✔[39m [34mtidyr    [39m 1.3.1
-[32m✔[39m [34mpurrr    [39m 1.0.2     
-── [1mConflicts[22m ──────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-[31m✖[39m [34mdplyr[39m::[32mfilter()[39m masks [34mstats[39m::filter()
-[31m✖[39m [34mdplyr[39m::[32mlag()[39m    masks [34mstats[39m::lag()
-[36mℹ[39m Use the conflicted package ([3m[34m<http://conflicted.r-lib.org/>[39m[23m) to force all conflicts to become errors
-[?25h[?25h[?25h[?25h[?25h]0;~[?2004hrstudio@3a311d01d8fc:~$ f[Kmake figures/euroasia.pca.png
-[?2004lmake: *** No rule to make target 'figures/euroasia.pca.png'.  Stop.
-]0;~[?2004hrstudio@3a311d01d8fc:~$ make figures/euroasia.pca.png[C[1Ppca.png[C[C[C[C[C[C[C
-[?2004lRscript euroasia_pcaplt.r
-── [1mAttaching core tidyverse packages[22m ────────────────────────────────────────────────────── tidyverse 2.0.0 ──
-[32m✔[39m [34mdplyr    [39m 1.1.4     [32m✔[39m [34mreadr    [39m 2.1.5
-[32m✔[39m [34mforcats  [39m 1.0.0     [32m✔[39m [34mstringr  [39m 1.5.1
-[32m✔[39m [34mggplot2  [39m 3.5.1     [32m✔[39m [34mtibble   [39m 3.2.1
-[32m✔[39m [34mlubridate[39m 1.9.3     [32m✔[39m [34mtidyr    [39m 1.3.1
-[32m✔[39m [34mpurrr    [39m 1.0.2     
-── [1mConflicts[22m ──────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-[31m✖[39m [34mdplyr[39m::[32mfilter()[39m masks [34mstats[39m::filter()
-[31m✖[39m [34mdplyr[39m::[32mlag()[39m    masks [34mstats[39m::lag()
-[36mℹ[39m Use the conflicted package ([3m[34m<http://conflicted.r-lib.org/>[39m[23m) to force all conflicts to become errors
-[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h]0;~[?2004hrstudio@3a311d01d8fc:~$ make figures/euroasiaroc.png
-[?2004lRscript euroasia_rocplt.r
-Type 'citation("pROC")' for a citation.
-
-Attaching package: ‘pROC’
-
-The following objects are masked from ‘package:stats’:
-
-    cov, smooth, var
-
-Loaded gbm 2.2.2
-This version of gbm is no longer under development. Consider transitioning to gbm3, https://github.com/gbm-developers/gbm3
-── [1mAttaching core tidyverse packages[22m ────────────────────────────────────────────────────── tidyverse 2.0.0 ──
-[32m✔[39m [34mdplyr    [39m 1.1.4     [32m✔[39m [34mreadr    [39m 2.1.5
-[32m✔[39m [34mforcats  [39m 1.0.0     [32m✔[39m [34mstringr  [39m 1.5.1
-[32m✔[39m [34mggplot2  [39m 3.5.1     [32m✔[39m [34mtibble   [39m 3.2.1
-[32m✔[39m [34mlubridate[39m 1.9.3     [32m✔[39m [34mtidyr    [39m 1.3.1
-[32m✔[39m [34mpurrr    [39m 1.0.2     
-── [1mConflicts[22m ──────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-[31m✖[39m [34mdplyr[39m::[32mfilter()[39m masks [34mstats[39m::filter()
-[31m✖[39m [34mdplyr[39m::[32mlag()[39m    masks [34mstats[39m::lag()
-[36mℹ[39m Use the conflicted package ([3m[34m<http://conflicted.r-lib.org/>[39m[23m) to force all conflicts to become errors
-[?25h[?25h[?25h[?25h[?25h[?25h[?25hUsing 100 trees...
-
-[?25hSetting levels: control = 0, case = 1
-Setting direction: controls < cases
-[?25h[?25h[?25hnull device 
-          1 
-[?25h[?25h]0;~[?2004hrstudio@3a311d01d8fc:~$ make derived_data/euroasia.csv
-[?2004lRscript euroasia_data.r
-── [1mAttaching core tidyverse packages[22m ────────────────────────────────────────────────────── tidyverse 2.0.0 ──
-[32m✔[39m [34mdplyr    [39m 1.1.4     [32m✔[39m [34mreadr    [39m 2.1.5
-[32m✔[39m [34mforcats  [39m 1.0.0     [32m✔[39m [34mstringr  [39m 1.5.1
-[32m✔[39m [34mggplot2  [39m 3.5.1     [32m✔[39m [34mtibble   [39m 3.2.1
-[32m✔[39m [34mlubridate[39m 1.9.3     [32m✔[39m [34mtidyr    [39m 1.3.1
-[32m✔[39m [34mpurrr    [39m 1.0.2     
-── [1mConflicts[22m ──────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-[31m✖[39m [34mdplyr[39m::[32mfilter()[39m masks [34mstats[39m::filter()
-[31m✖[39m [34mdplyr[39m::[32mlag()[39m    masks [34mstats[39m::lag()
-[36mℹ[39m Use the conflicted package ([3m[34m<http://conflicted.r-lib.org/>[39m[23m) to force all conflicts to become errors
-[?25h[?25h[?25h[?25h[?25h]0;~[?2004hrstudio@3a311d01d8fc:~$ make figures/euroasiapca.png
-[?2004lRscript euroasia_pcaplt.r
-── [1mAttaching core tidyverse packages[22m ────────────────────────────────────────────────────── tidyverse 2.0.0 ──
-[32m✔[39m [34mdplyr    [39m 1.1.4     [32m✔[39m [34mreadr    [39m 2.1.5
-[32m✔[39m [34mforcats  [39m 1.0.0     [32m✔[39m [34mstringr  [39m 1.5.1
-[32m✔[39m [34mggplot2  [39m 3.5.1     [32m✔[39m [34mtibble   [39m 3.2.1
-[32m✔[39m [34mlubridate[39m 1.9.3     [32m✔[39m [34mtidyr    [39m 1.3.1
-[32m✔[39m [34mpurrr    [39m 1.0.2     
-── [1mConflicts[22m ──────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-[31m✖[39m [34mdplyr[39m::[32mfilter()[39m masks [34mstats[39m::filter()
-[31m✖[39m [34mdplyr[39m::[32mlag()[39m    masks [34mstats[39m::lag()
-[36mℹ[39m Use the conflicted package ([3m[34m<http://conflicted.r-lib.org/>[39m[23m) to force all conflicts to become errors
-[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h]0;~[?2004hrstudio@3a311d01d8fc:~$ euroasia[K[K[K[K[K[K[K[Kmake figures/euroasiaroc.png
-[?2004lRscript euroasia_rocplt.r
-Type 'citation("pROC")' for a citation.
-
-Attaching package: ‘pROC’
-
-The following objects are masked from ‘package:stats’:
-
-    cov, smooth, var
-
-Loaded gbm 2.2.2
-This version of gbm is no longer under development. Consider transitioning to gbm3, https://github.com/gbm-developers/gbm3
-── [1mAttaching core tidyverse packages[22m ────────────────────────────────────────────────────── tidyverse 2.0.0 ──
-[32m✔[39m [34mdplyr    [39m 1.1.4     [32m✔[39m [34mreadr    [39m 2.1.5
-[32m✔[39m [34mforcats  [39m 1.0.0     [32m✔[39m [34mstringr  [39m 1.5.1
-[32m✔[39m [34mggplot2  [39m 3.5.1     [32m✔[39m [34mtibble   [39m 3.2.1
-[32m✔[39m [34mlubridate[39m 1.9.3     [32m✔[39m [34mtidyr    [39m 1.3.1
-[32m✔[39m [34mpurrr    [39m 1.0.2     
-── [1mConflicts[22m ──────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-[31m✖[39m [34mdplyr[39m::[32mfilter()[39m masks [34mstats[39m::filter()
-[31m✖[39m [34mdplyr[39m::[32mlag()[39m    masks [34mstats[39m::lag()
-[36mℹ[39m Use the conflicted package ([3m[34m<http://conflicted.r-lib.org/>[39m[23m) to force all conflicts to become errors
-[?25h[?25h[?25h[?25h[?25h[?25hError in gbm.fit(x = x, y = y, offset = offset, distribution = distribution,  : 
-  Bernoulli requires the response to be numeric in {0,1}
-Calls: gbm -> gbm.fit
-Execution halted
-[?25hmake: *** [Makefile:30: figures/euroasiaroc.png] Error 1
-]0;~[?2004hrstudio@3a311d01d8fc:~$ make figures/euroasiaroc.png
-[?2004lRscript euroasia_rocplt.r
-Type 'citation("pROC")' for a citation.
-
-Attaching package: ‘pROC’
-
-The following objects are masked from ‘package:stats’:
-
-    cov, smooth, var
-
-Loaded gbm 2.2.2
-This version of gbm is no longer under development. Consider transitioning to gbm3, https://github.com/gbm-developers/gbm3
-── [1mAttaching core tidyverse packages[22m ────────────────────────────────────────────────────── tidyverse 2.0.0 ──
-[32m✔[39m [34mdplyr    [39m 1.1.4     [32m✔[39m [34mreadr    [39m 2.1.5
-[32m✔[39m [34mforcats  [39m 1.0.0     [32m✔[39m [34mstringr  [39m 1.5.1
-[32m✔[39m [34mggplot2  [39m 3.5.1     [32m✔[39m [34mtibble   [39m 3.2.1
-[32m✔[39m [34mlubridate[39m 1.9.3     [32m✔[39m [34mtidyr    [39m 1.3.1
-[32m✔[39m [34mpurrr    [39m 1.0.2     
-── [1mConflicts[22m ──────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-[31m✖[39m [34mdplyr[39m::[32mfilter()[39m masks [34mstats[39m::filter()
-[31m✖[39m [34mdplyr[39m::[32mlag()[39m    masks [34mstats[39m::lag()
-[36mℹ[39m Use the conflicted package ([3m[34m<http://conflicted.r-lib.org/>[39m[23m) to force all conflicts to become errors
-[?25h[?25h[?25h[?25h[?25h[?25h[?25hError in gbm.fit(x = x, y = y, offset = offset, distribution = distribution,  : 
-  Bernoulli requires the response to be numeric in {0,1}
-Calls: gbm -> gbm.fit
-Execution halted
-[?25hmake: *** [Makefile:30: figures/euroasiaroc.png] Error 1
-]0;~[?2004hrstudio@3a311d01d8fc:~$ make figures/euroasiaroc.png
-[?2004lRscript euroasia_rocplt.r
-Type 'citation("pROC")' for a citation.
-
-Attaching package: ‘pROC’
-
-The following objects are masked from ‘package:stats’:
-
-    cov, smooth, var
-
-Loaded gbm 2.2.2
-This version of gbm is no longer under development. Consider transitioning to gbm3, https://github.com/gbm-developers/gbm3
-── [1mAttaching core tidyverse packages[22m ────────────────────────────────────────────────────── tidyverse 2.0.0 ──
-[32m✔[39m [34mdplyr    [39m 1.1.4     [32m✔[39m [34mreadr    [39m 2.1.5
-[32m✔[39m [34mforcats  [39m 1.0.0     [32m✔[39m [34mstringr  [39m 1.5.1
-[32m✔[39m [34mggplot2  [39m 3.5.1     [32m✔[39m [34mtibble   [39m 3.2.1
-[32m✔[39m [34mlubridate[39m 1.9.3     [32m✔[39m [34mtidyr    [39m 1.3.1
-[32m✔[39m [34mpurrr    [39m 1.0.2     
-── [1mConflicts[22m ──────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-[31m✖[39m [34mdplyr[39m::[32mfilter()[39m masks [34mstats[39m::filter()
-[31m✖[39m [34mdplyr[39m::[32mlag()[39m    masks [34mstats[39m::lag()
-[36mℹ[39m Use the conflicted package ([3m[34m<http://conflicted.r-lib.org/>[39m[23m) to force all conflicts to become errors
-[?25h[?25h[?25h[?25h[?25h[?25h[?25hError in gbm.fit(x = x, y = y, offset = offset, distribution = distribution,  : 
-  Bernoulli requires the response to be numeric in {0,1}
-Calls: gbm -> gbm.fit
-Execution halted
-[?25hmake: *** [Makefile:30: figures/euroasiaroc.png] Error 1
-]0;~[?2004hrstudio@3a311d01d8fc:~$ make figures/euroasiaroc.png
-[?2004lRscript euroasia_rocplt.r
-Type 'citation("pROC")' for a citation.
-
-Attaching package: ‘pROC’
-
-The following objects are masked from ‘package:stats’:
-
-    cov, smooth, var
-
-Loaded gbm 2.2.2
-This version of gbm is no longer under development. Consider transitioning to gbm3, https://github.com/gbm-developers/gbm3
-── [1mAttaching core tidyverse packages[22m ────────────────────────────────────────────────────── tidyverse 2.0.0 ──
-[32m✔[39m [34mdplyr    [39m 1.1.4     [32m✔[39m [34mreadr    [39m 2.1.5
-[32m✔[39m [34mforcats  [39m 1.0.0     [32m✔[39m [34mstringr  [39m 1.5.1
-[32m✔[39m [34mggplot2  [39m 3.5.1     [32m✔[39m [34mtibble   [39m 3.2.1
-[32m✔[39m [34mlubridate[39m 1.9.3     [32m✔[39m [34mtidyr    [39m 1.3.1
-[32m✔[39m [34mpurrr    [39m 1.0.2     
-── [1mConflicts[22m ──────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-[31m✖[39m [34mdplyr[39m::[32mfilter()[39m masks [34mstats[39m::filter()
-[31m✖[39m [34mdplyr[39m::[32mlag()[39m    masks [34mstats[39m::lag()
-[36mℹ[39m Use the conflicted package ([3m[34m<http://conflicted.r-lib.org/>[39m[23m) to force all conflicts to become errors
-[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25hUsing 100 trees...
-
-[?25hSetting levels: control = 0, case = 1
-Setting direction: controls < cases
-[?25h[?25h[?25hnull device 
-          1 
-[?25h[?25h]0;~[?2004hrstudio@3a311d01d8fc:~$ 
