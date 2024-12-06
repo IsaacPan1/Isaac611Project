@@ -7,8 +7,8 @@ s <- nyc_map %>%
     "Southern Europe", "Eastern Europe", "Western Europe", "Northern Europe", "Southern Asia",
     "Southeastern Asia", "Eastern Asia", "Western Asia", "Central Asia")) %>%
   mutate(class = case_when(
-    World.Region %in% c("Southern Europe", "Eastern Europe", "Western Europe", "Northern Europe") ~ 0,
-    World.Region %in% c("Southern Asia", "Southeastern Asia", "Eastern Asia", "Western Asia", "Central Asia") ~ 1
+    World.Region %in% c("Southern Europe", "Eastern Europe", "Western Europe", "Northern Europe") ~ "Europe",
+    World.Region %in% c("Southern Asia", "Southeastern Asia", "Eastern Asia", "Western Asia", "Central Asia") ~ "Asia"
   ))
 
 write.csv(s, 'derived_data/euroasia.csv', row.names = T)

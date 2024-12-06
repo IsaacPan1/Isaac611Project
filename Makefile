@@ -14,8 +14,8 @@ clean:
 derived_data/nyc.csv: source_data/nyc_languages.csv tidy_data.r
 	Rscript tidy_data.r
 
-figures/region.html: derived_data/nyc.csv region_plt.r
-	Rscript region_plt.r
+figures/regionggplot.png: derived_data/nyc.csv regionggplot.r
+	Rscript regionggplot.r
 
 figures/freq.png: derived_data/nyc.csv freq_plt.r
 	Rscript freq_plt.r

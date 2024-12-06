@@ -32,33 +32,4 @@ nyc_map$Longitude <- sapply(nyc_map$Longitude, function(x) paste0(substr(x, 1, 3
 nyc_map$Latitude <- as.numeric(nyc_map$Latitude)
 nyc_map$Longitude <- as.numeric(nyc_map$Longitude)
 
-#GPT put these countries in an order that geographically makes sense from unique(nyc_map$World.Region)
-ordered_regions <- c(
-	"Western Europe", "Northern Europe", "Eastern Europe", "Southern Europe",
-	"Western Asia", "Northern Africa", "Western Africa", "Middle Africa",
-	"Eastern Africa", "Southern Africa", "Eastern Asia", "Southern Asia",
-	"Central Asia", "Southeastern Asia", "South America", "Central America",
-	"Caribbean", "Northern America", "Australia and New Zealand", "Melanesia",
-	"Micronesia", "Polynesia"
-)
-
-
-# Number of ordered regions
-num_regions <- length(ordered_regions)
-
-# Generate a color palette using viridis for the ordered regions
-region_colors <- viridis(num_regions)
-
-# Create a named vector to map regions to colors
-region_to_color <- setNames(region_colors, ordered_regions)
-region_to_color_list <- as.list(region_to_color)
-
-# Now assign the colors to your data based on the 'World.Region' column
-nyc_map <- nyc_map %>%
-	mutate(color1 = sapply(as.character(World.Region), function(region) region_to_color_list[[region]]))
-
-#need this step for leaflet to recognize the color as a character in the new order
-nyc_map$color1 <- as.list(nyc_map$color1)
-nyc_map$color1 <- as.character(nyc_map$color1)
-
 write.csv(nyc_map, "derived_data/nyc.csv", row.names = TRUE)
