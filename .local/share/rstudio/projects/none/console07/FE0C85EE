@@ -1,0 +1,31 @@
+]0;~[?2004hrstudio@05c8dc6d2b78:~$ [Krstudio@05c8dc6d2b78:~$ Ubuntu
+[?2004lbash: Ubuntu: command not found
+]0;~[?2004hrstudio@05c8dc6d2b78:~$ make init
+[?2004lmkdir -p derived_data
+mkdir -p figures
+]0;~[?2004hrstudio@05c8dc6d2b78:~$ make derived_data[Krstudio@05c8dc6d2b78:~$ make derived_data/nyc.csv
+[?2004lRscript tidy_data.r
+Error in library(viridis) : there is no package called ‘viridis’
+Execution halted
+make: *** [Makefile:15: derived_data/nyc.csv] Error 1
+]0;~[?2004hrstudio@05c8dc6d2b78:~$ ls
+[?2004l611project    Dockerfile       euroasia_pcaplt.r  figures     Makefile	 region_plt.r  source_data
+derived_data  euroasia_data.r  euroasia_rocplt.r  freq_plt.r  README.md  report.Rmd    tidy_data.r
+]0;~[?2004hrstudio@05c8dc6d2b78:~$ Rscript tidy_data.R
+[?2004lError in library(viridis) : there is no package called ‘viridis’
+Execution halted
+]0;~[?2004hrstudio@05c8dc6d2b78:~$ [?2004l[?2004h[?2004l
+]0;~[?2004hrstudio@5ec608d1df34:~$ make init
+[?2004lmkdir -p derived_data
+mkdir -p figures
+]0;~[?2004hrstudio@5ec608d1df34:~$ Rscrirp[K[K[Kipt tidy_data.r
+[?2004lError in library(viridis) : there is no package called ‘viridis’
+Execution halted
+]0;~[?2004hrstudio@5ec608d1df34:~$ [?2004l[?2004h[?2004l
+]0;~[?2004hrstudio@a308b34c8c8e:~$ Rscript tidy_data.r
+[?2004lError in library(viridis) : there is no package called ‘viridis’
+Execution halted
+]0;~[?2004hrstudio@a308b34c8c8e:~$ ^C[?2004l[?2004h[?2004l
+]0;~[?2004hrstudio@a308b34c8c8e:~$ ^C[?2004l[?2004h[?2004l
+]0;~[?2004hrstudio@a308b34c8c8e:~$ ^C[?2004l[?2004h[?2004l
+]0;~[?2004hrstudio@a308b34c8c8e:~$ [?2004l[?2004h
