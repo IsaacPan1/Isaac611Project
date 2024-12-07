@@ -30,7 +30,7 @@ Isaac611project/
 ├── regionggplot.r         # Script for regional ggplot visualizations
 ├── report.Rmd             # R Markdown file for generating project report
 ├── tidy_data.r            # Script to clean and organize raw datasets
-
+```
 
 ## How to run
 
@@ -48,5 +48,4 @@ docker run -it Isaac611project bash
 docker run -it -e PASSWORD=yourpassword -p 8888:8787 -v "$(pwd):/home/rstudio" Isaac611project
 
 #follow makefile to generate
-
-
+```
