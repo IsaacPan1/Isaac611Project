@@ -1,4 +1,3 @@
-library(viridis)
 library(tidyverse)
 
 nyc <- read.csv("source_data/nyc_languages.csv", sep=";")
