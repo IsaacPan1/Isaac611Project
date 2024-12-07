@@ -11,25 +11,25 @@ In this project, we analyze observational data of languages spoken in New York. 
 ```plaintext
 Isaac611project/
 ├── derived_data/          # Processed data files
-│   ├── euroasia.csv       # Cleaned dataset for Euroasia analysis
-│   ├── nyc.csv            # Cleaned dataset for NYC analysis
+│   ├── euroasia.csv       # Filtered data to just Europe and Asia World Regions
+│   ├── nyc.csv            # Cleaned dataset
 ├── figures/               # Generated plots and figures
 │   ├── euroasiapca.png    # PCA plot for Euroasia data
 │   ├── euroasiaroc.png    # ROC curve for Euroasia data
-│   ├── freq.png           # Frequency plot
-│   ├── region.png         # Regional comparison plot
+│   ├── freq.png           # World Region Frequency plot
+│   ├── region.png         # NYC Regional comparison plot
 ├── source_data/           # Raw data files
 │   ├── nyc_languages.csv  # Original dataset for NYC language analysis
-├── Dockerfile             # Docker configuration file for reproducible environment
-├── Makefile               # Automates data processing and visualization tasks
+├── Dockerfile             # Docker configuration file
+├── Makefile               # Makefile with data/figures in order of generation
 ├── README.md              # Project documentation
-├── euroasia_data.r        # Script to clean and prepare Euroasia data
+├── euroasia_data.r        # Script to prepare Euroasia data
 ├── euroasia_pcaplt.r      # Script to generate PCA plot for Euroasia
 ├── euroasia_rocplt.r      # Script to generate ROC curve for Euroasia
 ├── freq_plt.r             # Script to generate frequency plot
-├── regionggplot.r         # Script for regional ggplot visualizations
+├── regionggplot.r         # Script for World Region plot
 ├── report.Rmd             # R Markdown file for generating project report
-├── tidy_data.r            # Script to clean and organize raw datasets
+├── tidy_data.r            # Script to clean original dataset
 ```
 
 ## How to run
